@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.projectWrapper{
+  position: absolute;
+  width: 250px;
+  height: 360px;
+}
+
+/* .bigCard{
+  
+  width: 200px;
+  height: 420px;
+} */
+.bigCardImg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease-out .15s;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.bigCardImg:nth-child(1){
+  transform: rotate(-9deg);
+}
+.bigCardImg:nth-child(2){
+  transform: rotate(-9deg);
+  left:-30px;
+  top: 0px;
+}
+.bigCardImg:nth-child(3){
+  transform: rotate(-3deg);
+}
+.bigCardImg:nth-child(4){
+  transform: rotate(-9deg);
+}
+.bigCardImg:nth-child(5){
+  transform: rotate(2deg);
+}
+.bigCardImg:nth-child(6){
+  transform: rotate(-9deg);
+}
+.bigCardImg:nth-child(7){
+  transform: rotate(9deg);
+}
+.bigCardImg:nth-child(8){
+  opacity: 0;
+}
+
+.smallCardImg{
+  position: absolute;
+  left: 0px;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+.animateBigCard{
+  transition: all .5s ease-out .05s;
+}
+
+.animateBigCard:nth-child(1){
+  transform: rotate(-13deg);
+  left:-130px;
+  top: -130px;
+}
+.animateBigCard:nth-child(2){
+  transform: rotate(-13deg);
+  left:-190px;
+  top: -250px;
+}
+.animateBigCard:nth-child(3){
+  transform: rotate(22deg);
+  left: 100px;
+  top: -100px;
+}
+.animateBigCard:nth-child(4){
+  transform: rotate(3deg);
+  left:240px;
+  top: -190px;
+  background-color: white;
+}
+.animateBigCard:nth-child(5){
+  transform: rotate(-23deg);
+  left:-100px;
+  top: 150px;
+}
+.animateBigCard:nth-child(6){
+  transform: rotate(-13deg);
+  left:-220px;
+  top: 300px;
+  /* border: solid 5px salmon */
+}
+.animateBigCard:nth-child(7){
+  transform: rotate(20deg);
+  left: 140px;
+  top: 150px;
+}
+.animateBigCard:nth-child(8){
+  transform: rotate(1deg);
+  left:280px;
+  top: 280px;
+  opacity: 100;
+  /* border: solid 5px salmon */
+}
