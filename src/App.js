@@ -23,10 +23,10 @@ function App() {
           <Routes>
           <Route path='/portfolios' element={<About />}/>
             <Route path='/' element={<About />}/>
-            <Route path='/vacanze' element={<Vacanze />} />
-            <Route path='/skills' element={<Skills/>} />
-            <Route path='/benlabs' element={<BenLabs/>} />
-            <Route path='/me' element={<Me/>} />
+            <Route path='/portfolios/vacanze' element={<Vacanze />} />
+            <Route path='/portfolios/skills' element={<Skills/>} />
+            <Route path='/portfolios/benlabs' element={<BenLabs/>} />
+            <Route path='/portfolios/me' element={<Me/>} />
           </Routes>
         </Router>
         {/* </div> */}

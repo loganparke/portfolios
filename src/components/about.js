@@ -11,6 +11,7 @@ import benlabs from '../assets/BENlabs.png'
 import resume from '../assets/resume.jpg'
 import github from '../assets/github.png'
 import skills from '../assets/skills.png'
+import linkedIn from '../assets/linkedin.png'
 
 const About = () => {
 
@@ -43,7 +44,7 @@ container.animate({
     {/* <div className="font-bold text-9xl absolute top-[41%] left-[31%] z-10 w-fit bg-none">Logan Parke</div> */}
     <div onMouseMove={handleMouseMove} className='bg-gradient-to-br from-black to-gray-500' id="container">
 
-    <Link to='/skills'>
+    <Link to='/portfolios/skills'>
       <div className="tile bg-red-500 h-[14%] w-[20%] left-[65%] top-[55%]">
         <div className="">
         <h2 className="absolute top-[40%] right-[40%] text-5xl font-bold"></h2>
@@ -52,7 +53,7 @@ container.animate({
       </div>
     </Link>
 
-    <Link className="w-full h-full" to="/vacanze">
+    <Link className="w-full h-full" to="/portfolios/vacanze">
     <div className="tile bg-blue-500 h-[24%] w-[32%] left-[32%] top-[12%]">
       <div>
         <div className="m-auto">
@@ -80,7 +81,7 @@ container.animate({
       <img className=" z-[100] w-full h-full object-cover" src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHJhbmRvbSUyMG9iamVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=70" />
       </div>
     </div> */}
-    <Link className="w-full h-full" to="/me">
+    <Link className="w-full h-full" to="/portfolios/me">
       <div className="tile bg-green-500 h-[42%] w-[20%] left-[8%] top-[5%]">
         <div className="">
           <div className="m-auto">
@@ -100,7 +101,16 @@ container.animate({
     </div>
     </a>
 
-    <Link to='/benlabs'>
+    <a href='https://www.linkedin.com/in/logan-parke-2b2915173/' target='_blank'>
+    <div className="tile bg-blue-300 h-[200px] w-[200px] left-[48%] top-[72%]">
+      <div className="">
+      {/* <h2 className="absolute top-[40%] right-[35%] text-5xl font-bold textShadow text-black">My LinkedIn</h2> */}
+      <img className=" z-[100] w-full h-full object-cover" src={linkedIn} />
+      </div>
+    </div>
+    </a>
+
+    <Link to='/portfolios/benlabs'>
       <div className="tile bg-white h-[23%] w-[25%] left-[35%] top-[43%]">
         <div className="">
         <h2 className="absolute top-[40%] right-[40%] text-5xl font-bold"></h2>
